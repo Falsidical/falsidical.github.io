@@ -3,6 +3,8 @@ html{
     background: linear-gradient(120deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 80%, rgba(255,255,255,1) 80%, rgba(0,0,0,1) 100%); 
     height: 100%;
     width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 body {
@@ -21,12 +23,7 @@ hr {
 
 .menu {
     list-style: none;
-}
-
-@media screen
-
-.menu li {
-    
+    position: fixed;
 }
 
 .menu a {
@@ -43,4 +40,10 @@ hr {
 
 .cover{
     text-align: center;
+}
+
+.test {
+    background-color: rgba(100,100,100,.3);
+    margin: 5% 10%;
+    padding: 50px;
 }
