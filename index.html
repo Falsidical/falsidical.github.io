@@ -8,32 +8,28 @@
     <title>Fran Port</title>
   </head>
   <body class="dark:bg-stone-900">
-    <nav class="flex text-slate-800 dark:text-white p-4">
+    <nav class="flex items-center text-slate-800 dark:text-white">
       <div class="mr-auto">
-        <h1>Fran Port</h1>
+        <h1 class="fran">Fran Port</h1>
       </div>
-      <div class="links">
-        <button id="toggleDarkMode">darkMode</button>
+      <div class="links p-4 font-semibold">
+        <button id="toggleDarkMode">🌙</button>
         <a href="#about">About Me</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact Me</a>
       </div>
     </nav>
-    <div>
-      <img id="hero" class="h-96 w-full object-cover" src="img/dark-mode.jpg" alt="Imagen de una computadora" />
+    <div class="relative">
+      <img id="hero" class="w-full object-cover h-96" src="img/dark-mode.jpg" alt="Imagen de una computadora" />
       <img class="logo" id="logo" src="img/fran_logo_dark.png" alt="Fran logo" />
     </div>
     <main class="text-slate-800 dark:text-white 2xl:mx-80 sm:mx-12">
       <div class="text-center my-24" id="about">
         <h1 class="text-4xl mb-4">Hola, mundo!</h1>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis nesciunt ratione fuga autem sed odit totam
-          accusantium! Praesentium, dicta asperiores mollitia distinctio sit, laborum, culpa maiores blanditiis delectus
-          sequi maxime?
-        </p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis nesciunt ratione fuga autem sed odit totam accusantium! Praesentium, dicta asperiores mollitia distinctio sit, laborum, culpa maiores blanditiis delectus sequi maxime?</p>
       </div>
       <div id="projects" class="my-16">
-        <h1 class="text-4xl text-center mb-8">Mis Projectos</h1>
+        <h1 class="text-4xl text-center mb-12">Mis Projectos</h1>
         <div class="m-2 grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 auto-rows-auto">
           <div class="project-box">
             <img src="img/project-1.png" />
@@ -44,14 +40,7 @@
               <a href="/gitgud">
                 <div class="btn btn-github">
                   <p>Ver en Github</p>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="22"
-                    height="22"
-                    fill="currentColor"
-                    class="bi bi-github"
-                    viewbox="0 0 16 16"
-                  >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-github" viewbox="0 0 16 16">
                     <path
                       d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
                     />
@@ -63,7 +52,27 @@
           <div class="project-box">
             <img src="img/project-2.png" />
             <div class="text-box">
-              <h3 class="text-2xl">uShop</h3>
+              <h3 class="text-2xl">uShop API</h3>
+              <p>Tienda basada en geolocalizacion. Backend del proyecto.</p>
+              <p>Tecnologias usadas: Node, Express, MongoDB</p>
+              <div class="flex gap-4">
+                <a href="http://" class="grow">
+                  <div class="btn btn-github">
+                    <p>Ver en Github</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-github" viewbox="0 0 16 16">
+                      <path
+                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                      />
+                    </svg>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-box">
+            <img src="img/project-2.png" />
+            <div class="text-box">
+              <h3 class="text-2xl">uShop Client</h3>
               <p>Tienda basada en geolocalizacion.</p>
               <p>Tecnologias usadas: React, Next.js, MongoDB, MapBox</p>
               <div class="flex gap-4">
@@ -75,14 +84,7 @@
                 <a href="http://" class="grow">
                   <div class="btn btn-github">
                     <p>Ver en Github</p>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="22"
-                      height="22"
-                      fill="currentColor"
-                      class="bi bi-github"
-                      viewbox="0 0 16 16"
-                    >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-github" viewbox="0 0 16 16">
                       <path
                         d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
                       />
