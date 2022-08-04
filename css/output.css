@@ -590,6 +590,10 @@ video {
   margin-bottom: 3rem;
 }
 
+.mt-auto{
+  margin-top: auto;
+}
+
 .flex{
   display: flex;
 }
@@ -726,6 +730,10 @@ video {
 .links a{
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+#toggleDarkMode {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .btn{

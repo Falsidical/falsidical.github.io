@@ -35,6 +35,10 @@
   @apply px-4;
 }
 
+#toggleDarkMode {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
 .btn {
   @apply p-1 text-center rounded-lg mt-6 outline outline-2 outline-stone-600 hover:outline-white;
   display: flex;
