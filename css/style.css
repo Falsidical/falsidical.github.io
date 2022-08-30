@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#icon {
+  @apply block md:hidden border-2 rounded-md;
+}
+
+/*.responsive #icon {
+  @apply absolute right-0 top-0 md:static;
+}*/
+
+.responsive {
+  @apply block;
+}
+
+.links a {
+  @apply px-4 hidden md:inline-block;
+}
+
+#toggleDarkMode {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.fran {
+  @apply text-2xl pl-4 self-center font-semibold whitespace-nowrap dark:text-white;
+  font-family: 'Montserrat', sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.logo {
+  @apply absolute left-1/2 top-1/2;
+  transform: translate(-50%, -50%);
+  height: auto;
+  width: 360px;
+}
+
+.project-box {
+  @apply bg-white dark:bg-stone-800 rounded-lg ring-1 ring-stone-900/5 shadow-xl flex flex-col justify-between;
+}
+
+.project-box img {
+  @apply w-full rounded-t-lg;
+}
+
+.project-box .text-box {
+  @apply m-4;
+}
+
+.btn {
+  @apply p-1 text-center rounded-lg mt-6 outline outline-2 outline-stone-600 hover:outline-white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn * {
+  margin: 0.25rem;
+}
+
+.btn-github {
+  @apply bg-black text-white  hover:bg-stone-800;
+}
+
+.btn-ushop {
+  @apply bg-orange-500 text-white hover:bg-orange-400 outline-orange-300;
+}
+
+.btn-blue {
+  @apply bg-blue-500 text-white hover:bg-blue-400 outline-blue-300;
+}
+
+.btn-red {
+  @apply bg-red-600 text-white hover:bg-red-400 outline-red-300;
+}
+
+.btn-yellow {
+  @apply bg-orange-500 text-white hover:bg-orange-400 outline-orange-300;
+}
