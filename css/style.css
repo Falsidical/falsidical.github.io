@@ -8,16 +8,20 @@
   @apply block md:hidden border-2 rounded-md;
 }
 
-/*.responsive #icon {
-  @apply absolute right-0 top-0 md:static;
-}*/
-
 .responsive {
   @apply block;
 }
 
-.links a {
-  @apply px-4 hidden md:inline-block;
+.responsive-btn {
+  @apply inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-stone-800 dark:focus:ring-gray-300;
+}
+
+.links {
+  @apply flex flex-col items-center p-2 mt-4 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:border-0;
+}
+
+.links * {
+  padding: 0.5rem;
 }
 
 #toggleDarkMode {
@@ -27,7 +31,7 @@
 .fran {
   @apply text-2xl pl-4 self-center font-semibold whitespace-nowrap dark:text-white;
   font-family: 'Montserrat', sans-serif;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
   text-transform: uppercase;
   letter-spacing: 4px;
 }
