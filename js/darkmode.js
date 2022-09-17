@@ -1,7 +1,7 @@
 const darkModeButton = document.querySelector('#toggleDarkMode');
-let background = document.querySelector('#hero');
-let icon = document.querySelector('#logo');
-let project1Image = document.querySelector('#project1');
+const background = document.querySelector('#hero');
+const icon = document.querySelector('#logo');
+const project1Image = document.querySelector('#project1');
 
 function setDarkMode(darkModeValue) {
   let mode;
@@ -21,8 +21,7 @@ function setDarkMode(darkModeValue) {
   project1Image.src = `img/project-1-${mode}.png`;
 }
 
-let darkModeEnabled;
-localStorage.darkMode === 'enabled' ? (darkModeEnabled = true) : (darkModeEnabled = false);
+let darkModeEnabled = localStorage.darkMode === 'enabled';
 setDarkMode(darkModeEnabled);
 
 darkModeButton.addEventListener('click', () => {
